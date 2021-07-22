@@ -16,7 +16,7 @@ from userbot import ALIVE_NAME, Lastupdate
 from . import dcdef
 from telethon.tl.types import ChannelParticipantsAdmins
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DARK COBRA"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "TSF USERBOT"
 
 # Thanks to Sipak bro and Aryan.. 
 # animation Idea by @ItzSipak && @Hell boy_pikachu
@@ -27,10 +27,10 @@ global ghanti
 ghanti = borg.uid
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/6aa39732748ed7c319943.jpg"
-file2 = "https://telegra.ph/file/a6d72504bc09e71484a54.jpg"
-file3 = "https://telegra.ph/file/3cdbede1d5d85aa2d50fc.jpg"
-file4 = "https://telegra.ph/file/3dae01973943e8b28c931.jpg"
+file1 = "https://telegra.ph/file/5a7945894898e8cee4a26.jpg"
+file2 = "https://telegra.ph/file/562e49da0f074c4b8e18f.jpg"
+file3 = "https://telegra.ph/file/5a7945894898e8cee4a26.jpg"
+file4 = "https://telegra.ph/file/562e49da0f074c4b8e18f.jpg"
 """ =======================CONSTANTS====================== """
 
 
@@ -43,13 +43,13 @@ async def hmm(yes):
     ghanti = borg.uid
     await yes.delete()
     uptime = await dcdef.get_readable_time((time.time() - Lastupdate))
-    pm_caption = "** 𝙳𝙰𝚁𝙺 𝙲𝙾𝙱𝚁𝙰 𝙸𝚂 𝙾𝙽𝙻𝙸𝙽𝙴**\n\n"
+    pm_caption = "** 𝑇𝑆𝐹 𝑈𝑆𝐸𝑅𝐵𝑂𝑇 𝑖𝑠 𝑜𝑛𝑙𝑖𝑛𝑒 **\n\n"
     pm_caption += "**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n"
-    pm_caption += "✘ About My System ✘\n\n"
+    pm_caption += "✘ 𝙰𝚋𝚘𝚞𝚝 𝚖𝚎 ✘\n\n"
     pm_caption += f"➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ {version.__version__}\n"
-    pm_caption += "➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/Dark_cobra_support)\n"
-    pm_caption += "➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [𝚃𝙴𝙰𝙼 𝙲𝙾𝙱𝚁𝙰](https://github.com/DARK-COBRA)\n"
-    pm_caption += "➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [𝙳𝙰𝚁𝙺-𝙲𝙾𝙱𝚁𝙰](https://github.com/DARK-COBRA/DARKCOBRA)\n\n"
+    pm_caption += "➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/tsf_userbot)\n"
+    pm_caption += "➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [𝚃𝙴𝙰𝙼 𝙲𝙾𝙱𝚁𝙰](https://github.com/angad005/TSF-USERBOT)\n"
+    pm_caption += "➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [𝙳𝙰𝚁𝙺-𝙲𝙾𝙱𝚁𝙰](https://github.com/angad005/TSF-USERBOT)\n\n"
     pm_caption += f"➾ **ᴜᴘᴛɪᴍᴇ** ☞ {uptime}\n\n"
     pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
     on = await borg.send_file(yes.chat_id, file=file1,caption=pm_caption)
