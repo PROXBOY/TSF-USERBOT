@@ -5,7 +5,7 @@ from platform import uname
 import sys
 from telethon import events, functions, __version__
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@Dark_cobra_support_group"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@tsf_userbot_support"
 
 #@command(pattern="^.help ?(.*)")
 @borg.on(admin_cmd(pattern=r"help ?(.*)", outgoing=True))
@@ -30,7 +30,7 @@ async def cmd_list(event):
                         out_file,
                         force_document=True,
                         allow_cache=False,
-                        caption="**COMMANDS** In DARK COBRA",
+                        caption="**COMMANDS** In TSF USERBOT",
                         reply_to=reply_to_id
                     )
                     await event.delete()
@@ -85,7 +85,7 @@ async def _(event):
 
     if plugin_name in CMD_LIST:
         help_string = CMD_LIST[plugin_name].__doc__
-        unload_string = f"Use `.unload {plugin_name}` to remove this plugin.\n           © Dark Cobra"
+        unload_string = f"Use `.unload {plugin_name}` to remove this plugin.\n           © TSF USERBOT"
         
         if help_string:
             plugin_syntax = f"Syntax for plugin **{plugin_name}**:\n\n{help_string}\n{unload_string}"
