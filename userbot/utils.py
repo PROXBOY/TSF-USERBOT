@@ -554,5 +554,5 @@ def start_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["userbot.plugins.assistant" + shortname] = mod
-        print("Assistant Has imported " + shortname)        
+        print("Assistant Has imported " + shortname)       
 
