@@ -69,7 +69,7 @@ async def ban(event):
     admin = chat.admin_rights
     creator = chat.creator
     if not admin and not creator:
-        await event.reply("I Am Not Admin 🥺.")
+        await event.reply("I Am Not Admin Sed 🥺.")
         return
 
     user, reason = await get_user_from_event(event)
@@ -222,7 +222,7 @@ async def demote(event):
     # If we catch BadRequestError from Telethon
     # Assume we don't have permission to demote
     except BadRequestError:
-        await event.reply("Me No Permission 🤔")
+        await event.reply("Me No Permission sed 🤔")
         return
     await event.reply("`Demoted this Guy Successfully!`")
 
